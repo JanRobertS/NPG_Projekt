@@ -44,7 +44,7 @@ for filename in os.listdir(notes_dir):
 
 while True:
     print("Co chcesz zrobić?")
-    print("1. Zapisać notatkę")
+    print("1. Utworzyć notatkę")
     print("2. Odczytać notatkę")
     print("3. Wyjść z programu")
     choice = input("Wybierz opcję: ")
