@@ -41,7 +41,7 @@ def send_note():
     # hasło: mquoianwvzurwhyj
     email_sender = 'testmailnpg123@gmail.com'
     email_password = 'mquoianwvzurwhyj'
-    email_reciver = input('podaj adres email')
+    email_reciver = input('\n Podaj adres email: ')
 
     subject = title
     body = read_note()
