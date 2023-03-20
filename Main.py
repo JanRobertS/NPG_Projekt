@@ -44,7 +44,7 @@ def send_note():
     # hasło: mquoianwvzurwhyj
     email_sender = 'testmailnpg123@gmail.com'
     email_password = 'mquoianwvzurwhyj'
-    email_reciver = input('\n Podaj adres email: ')
+    email_reciver = input('\nPodaj adres email: ')
 
     subject = title
     body = read_note()
@@ -73,7 +73,7 @@ while True:
     print("1. Utworzyć notatkę")
     print("2. Odczytać notatkę")
     print("3. Wyjść z programu")
-    print("4. Wyślij notatkę")
+    print("4. Wysłać notatkę emailem")
     choice = input("Wybierz opcję: ")
     if choice == "1":
         save_note()
