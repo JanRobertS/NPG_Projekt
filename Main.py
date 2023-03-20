@@ -35,13 +35,13 @@ def read_note():
     if os.path.exists(filename):
         with open(filename) as f:
             note = f.read()  # odczytaj notatkę z pliku
-        return note #zwraca notatkę
+        #print(note)  # wyświetl notatkę usunięte żeby funkcja była kompatybilna z send_email()
+        return note
     else:
         print("\nNotatka o takim tytule nie istnieje.\n")
 
 def send_note():
     # hasło: mquoianwvzurwhyj
-    #dane do wysyłania emaila
     email_sender = 'testmailnpg123@gmail.com'
     email_password = 'mquoianwvzurwhyj'
     email_reciver = input('\nPodaj adres email: ')
@@ -57,7 +57,6 @@ def send_note():
 
     context = ssl.create_default_context()
 
-    #wysyła email
     with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
         smtp.login(email_sender, email_password)
         smtp.sendmail(email_sender, email_reciver, em.as_string())
