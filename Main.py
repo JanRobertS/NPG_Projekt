@@ -78,7 +78,7 @@ while True:
     if choice == "1":
         save_note()
     elif choice == "2":
-        read_note()
+        print(read_note())
     elif choice == "3":
         break
     elif choice == "4":
