@@ -35,7 +35,7 @@ def read_note():
     if os.path.exists(filename):
         with open(filename) as f:
             note = f.read()  # odczytaj notatkę z pliku
-        #print(note)  # wyświetl notatkę usunięte żeby funkcja była kompatybilna z send_email()
+        print(note)  # wyświetl notatkę usunięte żeby funkcja była kompatybilna z send_email()
         return note
     else:
         print("\nNotatka o takim tytule nie istnieje.\n")
