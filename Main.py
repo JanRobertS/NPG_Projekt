@@ -1,4 +1,7 @@
 import os
+from email.message import EmailMessage
+import ssl
+import smtplib
 
 notes_dir = "notes"  # nazwa folderu, w którym będą przechowywane notatki
 if not os.path.exists(notes_dir):
