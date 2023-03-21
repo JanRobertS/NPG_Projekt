@@ -15,4 +15,4 @@ Wykonano program dodający notatkę z nazwą i opisem.
 
 20.03.2023
 
- Wykonanie części kodu, odpowiadającej wykonywaniu "n" notatek.
+ Wykonanie części kodu, odpowiadającej wykonywaniu "n" notatek...
