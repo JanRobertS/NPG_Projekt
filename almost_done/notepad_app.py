@@ -105,7 +105,7 @@ class App(customtkinter.CTk):
         with open(note_path, "w") as f:
             f.write(note_text)  # zapisz notatkę do pliku
         self.open_file.configure(values=SavedNotes(self.notes_dir))
-        tkinter.messagebox.showwinfo(title="Success!", message="Saved Successfully")
+        tkinter.messagebox.showinfo(title="Success!", message="Saved Successfully")
 
     def NewFile(self):
         # clear view
@@ -116,7 +116,7 @@ class App(customtkinter.CTk):
 
     def SendFile(self):
         send_note(self.entry_name.get(), self.textbox.get("0.0", "end"), self.entry_email.get())
-        tkinter.messagebox.shoinfo(title="Success!", message="Email sent")
+        tkinter.messagebox.showinfo(title="Success!", message="Email sent")
 
     def DeleteFile(self):
         # delete note from folder
@@ -131,4 +131,4 @@ class App(customtkinter.CTk):
         self.open_file.set("Open")
         self.textbox.delete("0.0", "end")
         self.entry_name.delete("0", "end")
-        tkinter.messagebox.showwinfo(title="Success!", message="Deleted successfully")
+        tkinter.messagebox.showinfo(title="Success!", message="Deleted successfully")
