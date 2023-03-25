@@ -21,7 +21,10 @@ def send_note(title, text, email_reciver):
     em['From'] = email_sender
     em['To'] = email_reciver
     em['Subject'] = title
-    em.set_content(text)
+
+    #dodanie stopki i notatki
+    em.set_content(f"{text}\n\nPozdrawiam,\nJan Robert Skarbon")
+
 
     context = ssl.create_default_context()
 
